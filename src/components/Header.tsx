@@ -5,21 +5,21 @@ export function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4">
       <div className="flex items-center gap-2">
-        <ФинПотокLogo />
-        <span className="text-lg font-semibold text-white">
-          ФинПоток<sup className="text-xs">™</sup>
+        <FlowpayLogo />
+        <span className="text-lg font-semibold text-white tracking-tight">
+          Flowpay<sup className="text-xs text-violet-400">™</sup>
         </span>
       </div>
 
       <nav className="hidden md:flex items-center gap-8">
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Продукты
+          Платформа
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors flex items-center gap-1">
           Решения <ChevronDown className="h-4 w-4" />
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
-          Ресурсы
+          Документация
         </a>
         <a href="#" className="text-sm text-gray-300 hover:text-white transition-colors">
           Тарифы
@@ -33,19 +33,19 @@ export function Header() {
         variant="outline"
         className="rounded-full border-violet-500 text-violet-400 hover:bg-violet-500/10 hover:text-violet-300 bg-transparent"
       >
-        Запросить демо
+        Попробовать бесплатно
       </Button>
     </header>
   )
 }
 
-function ФинПотокLogo() {
+function FlowpayLogo() {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="8" cy="8" r="3" fill="#8B5CF6" />
-      <circle cx="16" cy="8" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="8" cy="16" r="3" fill="#8B5CF6" opacity="0.6" />
-      <circle cx="16" cy="16" r="3" fill="#8B5CF6" opacity="0.4" />
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="28" height="28" rx="8" fill="#1a1a2e" />
+      <path d="M7 14 C7 10, 11 7, 14 7 C17 7, 21 10, 21 14" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" fill="none"/>
+      <path d="M7 14 C7 18, 11 21, 14 21 C17 21, 21 18, 21 14" stroke="#8B5CF6" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.4"/>
+      <circle cx="14" cy="14" r="2.5" fill="#8B5CF6" />
     </svg>
   )
 }

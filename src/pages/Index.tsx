@@ -10,9 +10,12 @@ export default function Index() {
       <HeroSection />
       <PartnersSection />
       <FeaturesSection />
-      <footer className="py-8 text-center text-sm text-gray-400">
-        От безопасных платежей до синхронизации счетов —{" "}
-        <span className="font-medium text-white">всё работает в одном месте.</span>
+      <footer className="py-10 text-center text-sm text-gray-500 border-t border-[#1a1a1a] mt-4">
+        <p className="mb-1">
+          От первого платежа до полной автоматизации финансов —{" "}
+          <span className="font-medium text-white">Flowpay растёт вместе с вашим бизнесом.</span>
+        </p>
+        <p className="text-gray-600 text-xs mt-3">© 2025 Flowpay. Все права защищены.</p>
       </footer>
     </main>
   )
